@@ -14,7 +14,7 @@ def insertionSort(arr):
                 j -= 1
         arr[j + 1] = key
 #result
-with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\input.txt','r') as infile:
+with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\Task7\input.txt','r') as infile:
     n = int(infile.readline())
     data = str(infile.readline())
 
@@ -34,5 +34,5 @@ else:
     z = list.index(tb)+1
     a = str(y)+' '+str(z)+' '+str(x)
     
-    with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\output.txt', 'w') as outfile:
+    with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\Task7\output.txt', 'w') as outfile:
         outfile.write(a)

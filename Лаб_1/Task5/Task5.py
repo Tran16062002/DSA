@@ -13,7 +13,7 @@ def selectionSort(array, size):
         (array[ind], array[min_index]) = (array[min_index], array[ind])
 #result
 t1_start = perf_counter()
-with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\input.txt','r') as infile:
+with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\Task5\input.txt','r') as infile:
     n = int(infile.readline())
     data = str(infile.readline())
 
@@ -25,7 +25,7 @@ if n!=len(data) or n<=0 or n>10**3:
 else:
     selectionSort(arr, size)
     a = ' '.join(str(i) for i in arr)
-    with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\output.txt', 'w') as outfile:
+    with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\Task5\output.txt', 'w') as outfile:
         outfile.write(a)
 t1_stop = perf_counter()
 print('Время работы: %s секунд '% (t1_stop - t1_start))

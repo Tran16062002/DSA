@@ -16,7 +16,7 @@ def bubbleSort(array):
         array[j+1] = temp
 #result
 t1_start = perf_counter()
-with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\input.txt','r') as infile:
+with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\Task6\input.txt','r') as infile:
     n = int(infile.readline())
     data = str(infile.readline())
     
@@ -27,7 +27,7 @@ if n!=len(data) or n<=0 or n>10**3:
 else:
     bubbleSort(arr)
     a = ' '.join(str(i) for i in arr)
-    with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\output.txt', 'w') as outfile:
+    with open('D:\Lab CTDL  - GT\Чан Тхи Лиен_Лаб0 - Copy\Лаб_1\Task6\output.txt', 'w') as outfile:
         outfile.write(a)
 t1_stop = perf_counter()
 print('Время работы: %s секунд '% (t1_stop - t1_start))
