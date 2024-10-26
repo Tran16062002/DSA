@@ -34,7 +34,7 @@ def multiplication(A, B):
 # result
 if __name__ == "__main__":
     
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task8\\input.txt', 'r') as infile:
+    with open('input.txt', 'r') as infile:
         n = int(infile.readline())
         data_a = str(infile.readline())
         data_b = str(infile.readline())
@@ -45,6 +45,6 @@ if __name__ == "__main__":
     arr = multiplication(A, B)
     result = ' '.join(str(i) for i in arr)
     
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task8\\output.txt', 'w') as outfile:
+    with open('output.txt', 'w') as outfile:
         outfile.write(result)
     

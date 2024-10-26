@@ -37,7 +37,7 @@ def mergeSort(array):
 t1_start = perf_counter()
 if __name__ == '__main__':
 
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task1\\input.txt', 'r') as infile:
+    with open('input.txt', 'r') as infile:
         n = int(infile.readline())
         data = str(infile.readline())
     data = data.split(' ')
@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
     mergeSort(arr)
     result = ' '.join(str(i) for i in arr)
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task1\\output.txt', 'w') as outfile:
+    with open('output.txt', 'w') as outfile:
         outfile.write(result)
 
 t1_stop = perf_counter()

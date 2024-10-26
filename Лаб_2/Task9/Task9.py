@@ -68,7 +68,7 @@ def pad_matrix(A, size):
 t1_start = perf_counter()
 
 if __name__ == "__main__":
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task9\\input.txt', 'r') as infile:
+    with open('input.txt', 'r') as infile:
         n = int(infile.readline())
         data = infile.readline().split()
         A_values = list(map(int, data[:n*n]))
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     result = [row[:n] for row in C_padded[:n]]
     # print(result)
     
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task9\\output.txt', 'w') as outfile:
+    with open('output.txt', 'w') as outfile:
         for row in result:
             outfile.write(' '.join(map(str, row))+ '\n')
 

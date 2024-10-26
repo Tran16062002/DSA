@@ -28,7 +28,7 @@ def find_positions(list_to_search, list_to_find):
 t1_start = perf_counter()
 if __name__ == '__main__':
     
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task4\\input.txt', 'r') as infile:
+    with open('input.txt', 'r') as infile:
         n = int(infile.readline())
         data1 = str(infile.readline()).split(' ')
         k = int(infile.readline())
@@ -39,7 +39,7 @@ if __name__ == '__main__':
         array = find_positions(list_to_search, list_to_find)
         result = ' '.join(str(i) for i in array)
     
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task4\\output.txt', 'w') as outfile:
+    with open('output.txt', 'w') as outfile:
         outfile.write(result)
     
 

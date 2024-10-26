@@ -35,14 +35,14 @@ def print_result(array, n):
 t1_start = perf_counter()
 
 if __name__ == "__main__":
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task5\\input.txt', 'r') as infile:
+    with open('input.txt', 'r') as infile:
         num = int(infile.readline())
         data = str(infile.readline())
     data = data.split(' ')
     array = [int(i) for i in data]
     result = find_mode(array, 0, len(array)-1)
     n = result[1]
-    with open('D:\\Lab CTDL  - GT\\Чан Тхи Лиен_Лаб0 - Copy\\Лаб_2\\Task5\\output.txt', 'w') as outfile:
+    with open('output.txt', 'w') as outfile:
         outfile.write(print_result(array, n))
 
 t1_stop = perf_counter()
